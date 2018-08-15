@@ -1,4 +1,5 @@
 # Dark Sky CLI
+[![Build Status](https://travis-ci.org/philwc/dark-sky-cli.svg?branch=master)](https://travis-ci.org/philwc/dark-sky-cli)
 
 This is a tool to retrieve weather information from Dark Sky.
 
