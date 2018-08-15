@@ -7,6 +7,7 @@ This is a tool to retrieve weather information from Dark Sky.
 Clone this project somewhere, and run
 
 ```bash
+composer install
 ./bin/weather auth
 ```
 
