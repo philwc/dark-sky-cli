@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Monolog\Logger;
+use philwc\DarkSky\CLI\Bootstrapper;
+use Symfony\Component\Console\Application;
+
+$logger = new Logger('name');
+$handler = new \Monolog\Handler\ErrorLogHandler();
+$handler->setLevel(Logger::WARNING);
+
+$logger->pushHandler($handler);
+
+$bootstrap = new Bootstrapper($logger);
+$bootstrap->prepare()->app(new Application())->run();

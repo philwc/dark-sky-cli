@@ -1,0 +1,8 @@
+vendor
+.phplint-cache
+.phpunit.result.cache
+.idea
+.darksky-secret
+
+cache
+!cache/.gitkeep
